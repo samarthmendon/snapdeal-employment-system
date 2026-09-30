@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapdeal | Employment System</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <div class="logo">S</div>
+            <div class="brand-text">Snapdeal</div>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Jobs</a>
+            <a href="#">Employers</a>
+            <a href="#">Campus</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="hero-left">
+            <div class="badge">Student Project • But kinda real</div>
+            <h1>Find jobs. <span>Post jobs.</span><br />Get moving.</h1>
+            <p class="hero-sub">
+                Snapdeal is a simple employment management system for students, recruiters, and startups who want
+                a practical platform to post openings, apply for roles, and track hiring activity without too much drama.
+            </p>
+
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <strong>1200+</strong>
+                    Students
+                </div>
+                <div class="stat-box">
+                    <strong>350+</strong>
+                    Companies
+                </div>
+                <div class="stat-box">
+                    <strong>4800</strong>
+                    Applications
+                </div>
+            </div>
+        </section>
+
+        <aside class="auth-box">
+            <div class="auth-toggle">
+                <button id="signupTab" class="active">Create Account</button>
+                <button id="loginTab">Login</button>
+            </div>
+
+            <div id="signupFormBox" class="form-box active">
+                <form id="signupForm">
+                    <div>
+                        <label for="signupName">Full Name</label>
+                        <input id="signupName" type="text" placeholder="Enter your full name" required />
+                    </div>
+
+                    <div>
+                        <label for="signupEmail">Email</label>
+                        <input id="signupEmail" type="email" placeholder="you@example.com" required />
+                    </div>
+
+                    <div>
+                        <label for="signupPassword">Password</label>
+                        <input id="signupPassword" type="password" placeholder="Create a password" required />
+                    </div>
+
+                    <div>
+                        <label for="signupRole">I am joining as</label>
+                        <select id="signupRole">
+                            <option value="job-seeker">Job Seeker</option>
+                            <option value="employer">Employer</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="primary-btn">Create my account</button>
+                </form>
+                <div id="signupStatus" class="status"></div>
+            </div>
+
+            <div id="loginFormBox" class="form-box">
+                <form id="loginForm">
+                    <div>
+                        <label for="loginEmail">Email</label>
+                        <input id="loginEmail" type="email" placeholder="Enter your email" required />
+                    </div>
+
+                    <div>
+                        <label for="loginPassword">Password</label>
+                        <input id="loginPassword" type="password" placeholder="Enter your password" required />
+                    </div>
+
+                    <button type="submit" class="primary-btn">Login to Snapdeal</button>
+                </form>
+                <div id="loginStatus" class="status"></div>
+            </div>
+        </aside>
+    </main>
+
+    <section class="company-strip">
+        <div class="company-box">Google</div>
+        <div class="company-box">Amazon</div>
+        <div class="company-box">TCS</div>
+        <div class="company-box">Infosys</div>
+        <div class="company-box">Wipro</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
